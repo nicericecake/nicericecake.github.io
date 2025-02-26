@@ -1,0 +1,146 @@
+body {
+
+    --s: 74px;
+    --c1: #211c11;
+    --c2: #1D190F;
+
+    --_g: #0000 83%, var(--c1) 85% 99%, #0000 101%;
+    background:
+        radial-gradient(27% 29% at right, var(--_g)) calc(var(--s)/ 2) var(--s),
+        radial-gradient(27% 29% at left, var(--_g)) calc(var(--s)/-2) var(--s),
+        radial-gradient(29% 27% at top, var(--_g)) 0 calc(var(--s)/ 2),
+        radial-gradient(29% 27% at bottom, var(--_g)) 0 calc(var(--s)/-2) var(--c2);
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+
+    /* background-color: #1D190F; */
+}
+
+
+.mmm {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    font-family: monospace;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    flex-shrink: 0;
+    grid-template-columns: repeat(4, 19vw);
+    gap: 2vw;
+    grid-template-rows: repeat(4, 16vh);
+    grid-template-areas: "aboutMe aboutMe aboutMe skills"
+        "aboutMe aboutMe aboutMe skills"
+        "tools exp proj skills"
+        "tools exp proj connect"
+
+
+}
+
+
+.aboutMe {
+    grid-area: aboutMe;
+}
+
+.exp {
+    grid-area: exp;
+}
+
+.proj {
+    grid-area: proj;
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.connect {
+    grid-area: connect;
+}
+
+.connect-card {
+    border: 3px solid #3d3a32;
+    color: #ECD6BF;
+    height: 100%;
+    background-color: #211c11;
+
+}
+
+.skills-card {
+    border: 3px solid #3d3a32;
+    color: #ECD6BF;
+    height: 100%;
+    background-color: #1D190F;
+
+}
+
+.tools-card {
+    border: 3px solid #3d3a32;
+    color: #ECD6BF;
+    height: 100%;
+    background-color: #1D190F;
+
+}
+
+
+.aboutMe-card {
+    border: 3px solid #3d3a32;
+    color: #ECD6BF;
+    height: 100%;
+    background-color: #1D190F;
+
+}
+
+.modal-card {
+    border: 3px solid #3d3a32;
+    color: #ECD6BF;
+    height: 100%;
+    background-color: #1D190F;
+}
+
+.modal-card:hover {
+    background-color: #292417;
+}
+
+.modal-card:hover .modal-icon {
+    color: aqua;
+
+}
+
+.modal-icon {
+    float: right
+}
+
+.hstack {
+    flex-wrap: wrap;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .tools {
+        grid-area: 4 / span 6;
+    }
+
+    .item2 {
+        grid-area: 2 / span 6;
+    }
+
+    .item3 {
+        grid-area: 3 / span 6;
+    }
+
+    .item4 {
+        grid-area: 4 / span 6;
+    }
+
+    .item5 {
+        grid-area: 5 / span 6;
+    } 
+}*/

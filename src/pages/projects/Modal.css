@@ -1,0 +1,25 @@
+.modal-content {
+    background-color: #1D190F;
+    border: 3px solid #3d3a32;
+    color: white;
+}
+
+.modal-header {
+    border-bottom: solid #3d3a32;
+}
+
+.nav {
+    --bs-nav-link-hover-color: pink
+}
+
+.nav-item {
+    --bs-nav-pills-link-active-bg: pink;
+}
+
+.nav-link {
+    color: antiquewhite;
+}
+
+.btn-close {
+    --bs-btn-close-color: white;
+}
